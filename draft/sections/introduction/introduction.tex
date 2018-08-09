@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,hyperref}
+
+\usepackage{catchfilebetweentags}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\begin{document}
+
+\section{Introduction} \label{sec:introduction}
+
+%<*tag>
+
+By the appropriate central limit theorem, robust inference requires a large number of observations. This can be particularly limiting in studying macroeconomic questions as the unit of observation typically is a closed economic system such as a country. The number of observations therefore is determined by the time dimension, yet in most studies it is rare to have the privilege of data extending back more than the past century. It would be desirable therefore to disaggregate the observation unit geographically: a 50-times increase in going to states, an approximately 3000-times increase in going to counties, and so on. This confronts a fundamental trade-off, however: the more disaggregate you go, the increasingly prone to spillovers the empirical method becomes. Adopting this approach requires correction for spillovers otherwise treatment effects will be biased. \\
+
+This limitation is particularly hindering for measuring the fiscal multiplier. This literature is notorious for noisy estimates in large part due to the small number of observations, as conventionally the analysis is at the national level [ref]. Using military procurement data [ref], recent research has increased disaggregation (notably [ref NS14]) yet they have been unable to reduce passed the state-level [Serrato paper is less than state-level]. As pointed out be [ref DG18], measurements below this geographic unit are meaningless to interpret due to the magnitude of subcontracting present, which causing spillovers between regions and so biasing treatment effects \\
+
+In this paper, I develop a framework to correct for the bias due to spillovers and therefore I am able to extend the analysis to sub-state levels consistently measure the fiscal multiplier - I proceed at county-level. 
+
+
+%</tag>
+
+\clearpage
+
+\section*{Figures} \label{sec:fig}
+\addcontentsline{toc}{section}{Figures}
+
+%\begin{figure}[hp]
+%  \centering
+%  \includegraphics[width=.6\textwidth]{../fig/placeholder.pdf}
+%  \caption{Placeholder}
+%  \label{fig:placeholder}
+%\end{figure}
+
+
+
+
+\clearpage
+
+\section*{Appendix A. Placeholder} \label{sec:appendixa}
+\addcontentsline{toc}{section}{Appendix A}
+
+
+
+\end{document}
