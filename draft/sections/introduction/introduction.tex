@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,hyperref}
+
+\usepackage{catchfilebetweentags}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\begin{document}
+
+\section{Introduction} \label{sec:introduction}
+
+%<*tag>
+
+By the appropriate central limit theorem, robust inference requires a large number of observations. This can be particularly limiting in studying macroeconomic questions as the unit of observation typically is a closed economic system such as a country. The number of observations therefore is determined by the time dimension, yet in most studies it is rare to have the privilege of data extending back more than the past century. It would be desirable therefore to disaggregate the observation unit geographically: a 50-times increase in going to states, an approximately 3000-times increase in going to counties, and so on. This confronts a fundamental trade-off, however: the more disaggregate you go, the increasingly prone to spillovers the empirical method becomes. Adopting this approach requires correction for spillovers otherwise treatment effects will be biased. \\
+
+This limitation is particularly hindering for measuring the fiscal multiplier. This literature is notorious for noisy estimates in large part due to the small number of observations, as conventionally the analysis is at the national level [ref]. Using military procurement data [ref], recent research has increased disaggregation (notably [ref NS14]) yet they have been unable to reduce passed the state-level [Serrato paper is less than state-level]. As pointed out be [ref DG18], measurements below this geographic unit are meaningless to interpret due to the magnitude of subcontracting present, which causing spillovers between regions and so biasing treatment effects \\
+
+In this paper, I develop a framework to correct for the bias due to spillovers and therefore I am able to extend the analysis to sub-state levels consistently measure the fiscal multiplier - I proceed at county-level. To do so, I draw on machinery applied in the International Trade literature; a field which is fundamentally concerned with the modeling of spatial linkages. My innovation here is two-fold, motivated by the fiscal multiplier literature measurements being linear approximations. First, I only specify the model to first order; the obvious cost is that higher orders are abstracted from but the benefit is that it encapsulates numerous canonical frameworks and market structure, at least to first order: any particular parametric functional form does not need to be committed to. Second, I show that in my framework, with only a single instrument, I am able to structurally estimate all the elasticities sufficient to measuring the fiscal multiplier. To do so I utilize the Neumann expansion and again only to first order; the obvious cost abstracting from higher order linkages, but the benefit is that I entirely avoid the usual demanding exercise, empirically, on estimating a plethora of parameters requiring a commensurate plethora of moments. \\
+
+Applying this framework to the fiscal multiplier brings data challenges. As is intuitive, large variation in defense spending is required to get tight estimates. It is desirable therefore to examine the 20th century US - as in NS14 [show figure] - as this was a period of large military build-ups and draw-downs. Outcome (GDP, Income) data and defense expenditure data are readily available for the second half of this century, however the primary US interregional trade datasource, the Commodity Flow Survey (CFS), was not commissioned until 1993. Fortunately, there exists a precursor to the CFS, the Commodity Transportation Survey (CTS), that has state-state manufacturing trade flows published for the year 1977.\footnote{The other years only have division-division trade flows.} Only a few studies seem to have utilized this, perhaps because because the survey only exists in scanned images in the National Archives. I have transcribed this into electronic form\footnote{Link to website for access.}. Sub-state trade flows during this period are not available publicly\footnote{The earliest available is the CFS 2007 which provides trade flows for the 50 largest MSAs and remainder of states, totaling XX "CFS areas".} therefore I've imputed county-county trade flows that obey a gravity relation and aggregate up to the observed CTS 1977 state-state trade flows.\footnote{Monte et al also impute using gravity to give them county-county trade flows.}  \\
+
+Beyond CES?
+
+
+%</tag>
+
+\clearpage
+
+\section*{Figures} \label{sec:fig}
+\addcontentsline{toc}{section}{Figures}
+
+%\begin{figure}[hp]
+%  \centering
+%  \includegraphics[width=.6\textwidth]{../fig/placeholder.pdf}
+%  \caption{Placeholder}
+%  \label{fig:placeholder}
+%\end{figure}
+
+
+
+
+\clearpage
+
+\section*{Appendix A. Placeholder} \label{sec:appendixa}
+\addcontentsline{toc}{section}{Appendix A}
+
+
+
+\end{document}

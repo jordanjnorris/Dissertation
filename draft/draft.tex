@@ -2,6 +2,9 @@
 
 \usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,hyperref}
 
+\usepackage{catchfilebetweentags}
+
+
 \normalem
 
 \onehalfspacing
@@ -53,6 +56,8 @@
 \section{Introduction} \label{sec:introduction}
 
 Testing \cite{kleven_taxation_2013}\cite{scharf_taxation_2007}
+
+\ExecuteMetaData[sections/introduction/introduction.tex]{tag}
 
 \section{Literature Review} \label{sec:literature}
 
